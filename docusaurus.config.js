@@ -41,7 +41,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -77,17 +76,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/adam-shannon/physics-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physics docs, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

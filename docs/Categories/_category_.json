@@ -1,8 +1,8 @@
 {
-  "label": "Categories -",
+  "label": "Categories",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Overview of all available topics"
+    "description": "Topics index"
   }
 }
