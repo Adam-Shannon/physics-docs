@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkphysics_docs=self.webpackChunkphysics_docs||[]).push([[121],{8070:s=>{s.exports=JSON.parse('[{"label":"Intro","permalink":"/physics-docs/docs/tags/intro","count":1},{"label":"projectile motion","permalink":"/physics-docs/docs/tags/projectile-motion","count":1}]')}}]);

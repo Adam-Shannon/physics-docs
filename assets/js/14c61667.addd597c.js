@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkphysics_docs=self.webpackChunkphysics_docs||[]).push([[2175],{6308:s=>{s.exports=JSON.parse('{"permalink":"/physics-docs/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

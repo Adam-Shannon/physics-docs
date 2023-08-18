@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkphysics_docs=self.webpackChunkphysics_docs||[]).push([[7556],{4976:s=>{s.exports=JSON.parse('{"label":"facebook","permalink":"/physics-docs/blog/tags/facebook","allTagsPath":"/physics-docs/blog/tags","count":1}')}}]);
