@@ -1,11 +1,29 @@
 import React from 'react';
 import authorList from '@site/static/authors.json';
 import 'js-yaml';
+import {AvatarGroup, Avatar} from "@mui/material";
 
 export default function Author({fm}) {
-    //just iterate through each and then return a custom designed multi author component
-    console.log(authorList["adam"]["name"]);
+    var AuthorsIn = fm.authors.split(",");
     return (
-      <p>{fm.authors}</p>
-    );
+        <div>
+            {AuthorsIn.map(
+                (author) => parseAuthor(author)
+            )}
+        </div>
+    )
+}
+
+function parseAuthor(authorIn) {
+    let authorData = authorList[authorIn];
+    if(typeof(authorData) === 'undefined'){
+        return null;
+    }
+    return (
+        <div>
+            <Avatar alt={authorData["name"]} src={authorData["image_url"]}></Avatar>
+            <a href={authorData["url"]}>{authorData["name"]}</a>
+            <h6>{authorData["title"]}</h6>
+        </div>
+    )
 }
