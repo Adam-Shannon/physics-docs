@@ -6,7 +6,7 @@ import {AvatarGroup, Avatar} from "@mui/material";
 export default function Author({fm}) {
     var AuthorsIn = fm.authors.split(",");
     return (
-        <div>
+        <div className="row">
             {AuthorsIn.map(
                 (author) => parseAuthor(author)
             )}
@@ -20,10 +20,12 @@ function parseAuthor(authorIn) {
         return null;
     }
     return (
-        <div key={authorIn}>
+        <div key={authorIn} className="row">
             <Avatar alt={authorData["name"]} src={authorData["image_url"]}></Avatar>
-            <a href={authorData["url"]}>{authorData["name"]}</a>
-            <h6>{authorData["title"]}</h6>
+            <div>
+                <a href={authorData["url"]}>{authorData["name"]}</a>
+                <h6>{authorData["title"]}</h6>
+            </div>
         </div>
     )
 }
