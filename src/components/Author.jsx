@@ -20,7 +20,7 @@ function parseAuthor(authorIn) {
         return null;
     }
     return (
-        <div>
+        <div key={authorIn}>
             <Avatar alt={authorData["name"]} src={authorData["image_url"]}></Avatar>
             <a href={authorData["url"]}>{authorData["name"]}</a>
             <h6>{authorData["title"]}</h6>
