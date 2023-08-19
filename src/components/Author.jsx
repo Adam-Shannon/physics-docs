@@ -1,12 +1,11 @@
 import React from 'react';
 import authorList from '@site/static/authors.json';
 import 'js-yaml';
-import {AvatarGroup, Avatar} from "@mui/material";
 
 export default function Author({fm}) {
     var AuthorsIn = fm.authors.split(",");
     return (
-        <div className="row">
+        <div className="row margin-bottom--lg">
             {AuthorsIn.map(
                 (author) => parseAuthor(author)
             )}
@@ -20,11 +19,19 @@ function parseAuthor(authorIn) {
         return null;
     }
     return (
-        <div key={authorIn} className="row">
-            <Avatar alt={authorData["name"]} src={authorData["image_url"]}></Avatar>
-            <div>
-                <a href={authorData["url"]}>{authorData["name"]}</a>
-                <h6>{authorData["title"]}</h6>
+        <div className="avatar margin-left--sm margin-right--sm">
+            <a
+                className="avatar__photo-link avatar__photo avatar__photo"
+                href={authorData["url"]}>
+                <img
+                    alt={"author image for " + authorData["email"]}
+                    src= {authorData["image_url"]} />
+            </a>
+            <div className="avatar__intro">
+                <div className="avatar__name">{authorData["name"]}</div>
+                <small className="avatar__subtitle">
+                    {authorData["title"]}
+                </small>
             </div>
         </div>
     )
