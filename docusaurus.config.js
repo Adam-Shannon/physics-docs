@@ -46,6 +46,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          sidebarCollapsible: true
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
