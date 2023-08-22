@@ -1,0 +1,26 @@
+---
+sidebar_label: 'Characteristic Impedance'
+sidebar_position: 1
+authors: adam
+tags: [Intro, Waves]
+showLastUpdateAuthor: true
+---
+import Author from "@site/src/components/Author";
+import ImageURL from "@site/static/img/Impedance.png"
+
+# Characteristic Impedance
+<Author fm={frontMatter}></Author>
+
+Consider a wave on a string which is described by a solution to the 1D Wave Equation $\frac{\partial^2y}{\partial x^2}= \frac{1}{c}\frac{\partial^2y}{\partial t^2}$ (where c is the wave speed).
+The driven end of the string at $x=0$ will create a sinusoidal wave  and for this wave to be continuously sinusoidal the applied force should balance the transverse component of the tension
+in the string, in this case in the y direction.
+
+<img src={ImageURL} width={300} />
+
+Using the small angle approximation the transverse component of the tension is approximately $-T\tan(\theta)$ which using fundamental trigonometry is equivalent to $-T\frac{\partial y}{\partial x}|_{x=0}$.
+Finally by substituting the wave equation we can write the transverse force required in terms of the transverse velocity as:
+
+$$F_t=\frac{T}{c}\frac{\partial y}{\partial t} \equiv\sqrt{T\rho} \frac{\partial y}{\partial t}$$
+
+Where $\rho$ is the linear density of the string we define characteristic impedance $Z=\sqrt{T\rho}$  as a measure of the resistance to sinusoidal motion in the string, which in
+lossless media will be determined by the inertia and elasticity of the string.
