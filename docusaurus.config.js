@@ -95,7 +95,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physics docs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Adam Shannon, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
