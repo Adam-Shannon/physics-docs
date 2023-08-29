@@ -46,6 +46,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          sidebarCollapsible: true
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -95,7 +96,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physics docs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Adam Shannon, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
